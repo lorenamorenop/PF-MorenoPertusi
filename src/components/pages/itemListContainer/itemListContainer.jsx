@@ -1,11 +1,11 @@
-import "../itemListContainer/itemListContainer.css";
+import "../itemListContainer/ItemListContainer.css";
 
-const itemListContainer = () => {
+const ItemListContainer = (props) => {
   return (
-    <div>
-      <h2> HOLA QUE TAL</h2>
+    <div className="saludo">
+      <p>{props.greeting}</p>
     </div>
   );
 };
 
-export default itemListContainer;
+export default ItemListContainer;

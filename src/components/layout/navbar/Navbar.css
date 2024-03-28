@@ -1,0 +1,27 @@
+.containerNav {
+  background-color: white;
+  display: flex;
+  margin-top: 15px;
+}
+
+.listaNav li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding-left: 220px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.listaNav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.logo {
+  max-width: 60px;
+  height: auto;
+  border: solid black 1px;
+  margin-left: 15px;
+}
