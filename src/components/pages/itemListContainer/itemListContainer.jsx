@@ -1,11 +1,7 @@
-import "../itemListContainer/ItemListContainer.css";
+import ItemList from "./ItemList.jsx";
 
-const ItemListContainer = (props) => {
-  return (
-    <div className="saludo">
-      <p>{props.greeting}</p>
-    </div>
-  );
+const ItemListContainer = () => {
+  return <ItemList />;
 };
 
 export default ItemListContainer;
