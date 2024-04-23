@@ -1,0 +1,24 @@
+.error-container {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+  justify-content: center; /* Centra verticalmente en el contenedor */
+  align-items: center;
+
+  height: 50vh;
+}
+
+.error-container h1 {
+  font-size: 100px;
+  padding-top: 20px;
+  color: rgb(22, 22, 150);
+  text-shadow: 2px 2px 4px black;
+}
+
+.error-container h2 {
+  font-size: 40px;
+}
+
+.error-container h3 {
+  font-size: 30px;
+  padding-top: 10px;
+}

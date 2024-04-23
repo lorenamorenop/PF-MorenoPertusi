@@ -3,3 +3,10 @@
   justify-content: center;
   font-size: 25px;
 }
+
+.contenedor-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}

@@ -4,13 +4,13 @@
   margin-top: 15px;
 }
 
-.listaNav li {
+.listaNav a {
   display: inline-block;
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  padding-left: 220px;
-  padding-right: 100px;
+  padding-left: 150px;
+  padding-right: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
