@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { products } from "../../../productsMock";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
+import { CartContext } from "../../../context/CartContext";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
-  console.log(id);
 
   const [item, setItem] = useState({});
+
+  const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
     let itemEncontrado = products.find((product) => product.id === +id);
@@ -18,9 +20,14 @@ const ItemDetailContainer = () => {
     getProduct.then((res) => setItem(res));
   }, [id]);
 
-  console.log(item);
+  const onAdd = (cantidad) => {
+    let product = { ...item, quantity: cantidad };
 
-  return <ItemDetail item={item} />;
+    addToCart(product);
+    // la funcion addToCart
+  };
+
+  return <ItemDetail item={item} onAdd={onAdd} />;
 };
 
 export default ItemDetailContainer;

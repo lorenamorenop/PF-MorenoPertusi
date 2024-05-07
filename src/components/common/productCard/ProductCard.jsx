@@ -13,7 +13,7 @@ const ProductCard = ({ title, description, img, price, id }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        class="img-container"
+        className="img-container"
         component="img"
         alt="x"
         height="140"

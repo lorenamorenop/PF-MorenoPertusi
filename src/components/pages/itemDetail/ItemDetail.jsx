@@ -1,11 +1,29 @@
-import "../itemDetail/ItemDetail.css";
-
-const ItemDetail = ({ item }) => {
+import CounterPresentacional from "../../common/counter/CounterPresentacional";
+import "./ItemDetail.css";
+const ItemDetail = ({ item, onAdd }) => {
   return (
     <div>
-      <h2 className="detail-title">{item.title}</h2>
-      <img className="detail-img" src={item.img} alt={item.title} />
-      <h3 className="detail-descripton"> {item.description}</h3>
+      <div className={"containerItemDetail"}>
+        <div className={"containerImage"}>
+          <img src={item.img} alt="" />
+        </div>
+
+        <div className={"containerDetail"}>
+          <h2 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "23px" }}>Nombre:</span> {item.title}
+          </h2>
+          <h2 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "23px" }}>Descripcion:</span>{" "}
+            {item.description}
+          </h2>
+          <h2 style={{ fontFamily: "monospace" }}>
+            <span style={{ fontSize: "23px" }}>Precio:</span> ${item.price}.-
+          </h2>
+        </div>
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <CounterPresentacional stock={item.stock} onAdd={onAdd} />
+      </div>
     </div>
   );
 };
