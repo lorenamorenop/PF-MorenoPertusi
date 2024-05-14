@@ -9,7 +9,7 @@ export const CounterContainer = ({ stock, initial = 1, onAdd }) => {
     if (contador < stock) {
       setContador(contador + 1);
     } else {
-      alert("maximo en stock");
+      alert("Stock máximo");
     }
   };
 
@@ -17,7 +17,7 @@ export const CounterContainer = ({ stock, initial = 1, onAdd }) => {
     if (contador > 1) {
       setContador(contador - 1);
     } else {
-      alert("no podes menos de 1");
+      alert("No podes menos de 1");
     }
   };
 

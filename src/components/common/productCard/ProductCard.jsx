@@ -6,20 +6,23 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import "../productCard/ProductCard.css";
 
-const ProductCard = ({ title, description, img, price, id }) => {
+const ProductCard = ({ title, description, price, img, id }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      className="card-padre"
+      sx={{ width: 345, display: "flex", flexDirection: "column" }}
+    >
       <CardMedia
-        className="img-container"
-        component="img"
-        alt="x"
-        height="140"
+        className="card-fondo"
+        sx={{ height: 140 }}
         image={img}
+        title="vino"
       />
-      <CardContent>
+
+      <CardContent className="card-content">
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -27,7 +30,7 @@ const ProductCard = ({ title, description, img, price, id }) => {
           {description}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          ${price}.-
+          $ {price} .-
         </Typography>
       </CardContent>
       <CardActions>

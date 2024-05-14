@@ -1,0 +1,13 @@
+.boton-restarSumar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+}
+.boton-restarSumar .boton-agregarCarrito {
+  background-color: #b03b22;
+}
+
+.boton-restarSumar .boton-agregarCarrito:hover {
+  background-color: #b03c22be;
+}

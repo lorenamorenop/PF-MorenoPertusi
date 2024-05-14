@@ -1,9 +1,8 @@
 .error-container {
   display: flex;
-  flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
-  justify-content: center; /* Centra verticalmente en el contenedor */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
   height: 50vh;
 }
 

@@ -1,6 +1,6 @@
-import CounterPresentacional from "../../common/counter/CounterPresentacional";
+import { CounterContainer } from "../../common/counter/CounterContainer";
 import "./ItemDetail.css";
-const ItemDetail = ({ item, onAdd }) => {
+const ItemDetail = ({ item, onAdd, initial }) => {
   return (
     <div>
       <div className={"containerItemDetail"}>
@@ -9,20 +9,19 @@ const ItemDetail = ({ item, onAdd }) => {
         </div>
 
         <div className={"containerDetail"}>
-          <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Nombre:</span> {item.title}
+          <h2 className="item-details">
+            <span className="categorias">Nombre:</span> {item.title}
           </h2>
-          <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Descripcion:</span>{" "}
-            {item.description}
-          </h2>
-          <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Precio:</span> ${item.price}.-
-          </h2>
+          <h3 className="item-details">
+            <span className="categorias">Descripcion:</span> {item.description}
+          </h3>
+          <h4 className="item-details">
+            <span className="categorias">Precio:</span> ${item.price}.-
+          </h4>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <CounterPresentacional stock={item.stock} onAdd={onAdd} />
+      <div className="counter-contenedor">
+        <CounterContainer stock={item.stock} onAdd={onAdd} initial={initial} />
       </div>
     </div>
   );

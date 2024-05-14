@@ -1,27 +1,11 @@
 .containerNav {
-  background-color: white;
-  display: flex;
-  margin-top: 15px;
-}
-
-.listaNav a {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  padding-left: 150px;
-  padding-right: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.listaNav a {
-  text-decoration: none;
-  color: black;
-  position: relative;
+  background-color: #e4e2dd;
+  height: 50px;
 }
 .logo {
-  max-width: 60px;
-  height: auto;
-  border: solid black 1px;
-  margin-left: 16px;
+  max-width: 50px;
+  height: 45px;
+}
+.menu-link {
+  color: #b03b22;
 }

@@ -1,3 +1,14 @@
 .img-container {
   object-fit: cover;
 }
+
+.card-padre {
+  border: 1px rgba(0, 0, 0, 0.524) solid;
+}
+.card-fondo {
+  background-color: #e4e2dd;
+  border: 1px rgba(0, 0, 0, 0.524) solid;
+}
+.card-content {
+  flex-grow: 1;
+}

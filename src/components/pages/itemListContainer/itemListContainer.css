@@ -9,4 +9,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
+  padding-top: 15px;
+  background-color: #e4e2dd;
+}
+
+.contenedor-Skeleton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
 }

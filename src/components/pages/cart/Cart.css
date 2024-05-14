@@ -1,0 +1,67 @@
+.contenedor-productsCart {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  margin-top: 20px;
+}
+.contenedor-productsCart h2 {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5px;
+}
+.contenedor-productsCart h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.contenedor-productsCart h4 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.contenedor-productsCart img {
+  max-width: 100px;
+  height: auto;
+}
+h5 {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.boton-eliminarProducto {
+  font-size: 15px;
+}
+
+.cart-empty-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.cart-empty-message h2 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.cart-empty-message p {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.cart-empty-message .boton-verProductos {
+  background-color: #b03b22;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cart-empty-message .boton-verProductos:hover {
+  background-color: #b03c22be;
+}
+
+div .boton-finalizarCompra {
+  background-color: #b03b22;
+}
+
+div .boton-finalizarCompra:hover {
+  background-color: #b03c22be;
+}
