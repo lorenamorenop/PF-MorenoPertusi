@@ -12,6 +12,7 @@ const ItemListContainer = () => {
   const { name } = useParams();
 
   const [items, setItems] = useState([]);
+  console.log(items);
   const [error, setError] = useState(null);
 
   useEffect(() => {
